@@ -1,0 +1,56 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="m-user">
+    <view class="m-user-img">
+      <image class="userinfo-avatar" src="../../static/images/default-user.jfif" mode="cover"></image>
+    </view>
+    <view class="m-user-sec">
+      <view class="sec-item">
+        <image class="item-img" src="../../static/live/woman1.png" mode="cover"></image>
+        <view class="item-text">
+          姓名：{{secObj.name}}
+        </view>
+      </view>
+      <view class="sec-item">
+        <image class="item-img" src="../../static/live/woman2.png" mode="cover"></image>
+        <view class="item-text">
+          星座：{{secObj.constellation}}
+        </view>
+      </view>
+
+      <view class="sec-item">
+        <image class="item-img" src="../../static/live/woman3.png" mode="cover"></image>
+        <view class="item-text">
+          年龄：{{secObj.age}}
+        </view>
+      </view>
+      <view class="sec-item">
+        <image class="item-img" src="../../static/live/woman4.png" mode="cover"></image>
+        <view class="item-text">
+          爱好：
+          <text class="" wx:for="{{secObj.hobbies}}" wx:key="{{index}}">
+            <text wx:if="{{item==1}}">吃饭</text>
+            <text wx:if="{{item==2}}">睡觉</text>
+            <text wx:if="{{item==3}}">跑步</text>
+            <text wx:if="{{item==4}}">看电影</text>
+          </text>
+        </view>
+      </view>
+      <view class="sec-item">
+        <image class="item-img" src="../../static/live/woman5.png" mode="cover"></image>
+        <view class="item-text">
+          座右铭：{{secObj.motto}}
+        </view>
+      </view>
+    </view>
+
+  </view>
+  <view class="m-intro">
+    <view class="intro-mine">
+      自我介绍
+    </view>
+    <view class="intro-text">
+      {{secObj.intro}}
+    </view>
+  </view>
+</view>

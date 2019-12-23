@@ -1,0 +1,17 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="m-cir">
+    <view class="m-cir-type">
+      <view class="m-cir-g m-cir-item {{type==1 ? 'active-type': ''}}" data-type='1'  bindtap="chooseType">#随笔</view>
+      <view class="m-cir-p m-cir-item {{type==2 ? 'active-type': ''}}" data-type='2' bindtap="chooseType">#日记</view>
+      <view class="m-cir-b m-cir-item {{type==3 ? 'active-type': ''}}" data-type='3' bindtap="chooseType">#心情</view>
+      <view class="m-cir-y m-cir-item {{type==4 ? 'active-type': ''}}" data-type='4' bindtap="chooseType">#杂事</view>
+    </view>
+  </view>
+  <view class="m-disc">
+    <textarea class="m-disc-input" placeholder="请输入" value='{{inputVal}}' bindinput="bindVal"  type="textarea"/>
+  </view>
+  <view  class="m-send-listen" bindtap="sendListen">
+    发布
+  </view>
+</view>

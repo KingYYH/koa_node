@@ -1,0 +1,82 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button class="userinfo-btn" wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:if="{{!hasUserInfo && canIUse}}">
+      <image class="userinfo-avatar" src="../../static/images/default-user.jfif" mode="cover"></image>
+      <text class="userinfo-nickname">请登录</text>
+    </block>
+    <block wx:else>
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="m-swiper">
+    <image class="m-swiper-img" src='../../static/images/swiper-1.jpg' mode='aspectFill' />
+    <image class="m-swiper-img" src='../../static/images/swiper-2.jpg' mode='aspectFill' />
+  </view>
+  <view class="m-m-list-p">
+    <view class="m-m-list">
+      <view class="m-m-title">
+        记录人生
+      </view>
+      <view class="m-m-item m-1px">
+        <view class="m-m-item-left">
+          <image class="m-m-item-left-img" src='../../static/images/zhuye.png' mode='aspectFill'/>
+          <view class="m-m-text">
+            主页
+          </view>
+        </view>
+        <view class="m-m-item-right">
+          <image class="m-into-img" src='../../static/images/into.png' mode='aspectFill'/>
+        </view>
+      </view>
+      <!-- <view class="m-m-item m-1px">
+        <view class="m-m-item-left">
+          <image class="m-m-item-left-img" src='../../static/images/dongtai.png' mode='aspectFill'/>
+          <view class="m-m-text">
+            动态
+          </view>
+        </view>
+        <view class="m-m-item-right">
+          <image class="m-into-img" src='../../static/images/into.png' mode='aspectFill'/>
+        </view>
+      </view>
+      <view class="m-m-item m-1px">
+        <view class="m-m-item-left">
+          <image class="m-m-item-left-img" src='../../static/images/dianping.png' mode='aspectFill'/>
+          <view class="m-m-text">
+            点评
+          </view>
+        </view>
+        <view class="m-m-item-right">
+          <image class="m-into-img" src='../../static/images/into.png' mode='aspectFill'/>
+        </view>
+      </view>
+      <view class="m-m-item m-1px">
+        <view class="m-m-item-left">
+          <image class="m-m-item-left-img" src='../../static/images/guanli.png' mode='aspectFill'/>
+          <view class="m-m-text">
+            管理
+          </view>
+        </view>
+        <view class="m-m-item-right">
+          <image class="m-into-img" src='../../static/images/into.png' mode='aspectFill'/>
+        </view>
+      </view> -->
+
+      <navigator class="m-m-item m-1px" url="/pagesubA/collect/index">
+        <view class="m-m-item-left">
+          <image class="m-m-item-left-img" src='../../static/images/shoucang.png' mode='aspectFill'/>
+          <view class="m-m-text">
+            收藏
+          </view>
+        </view>
+        <view class="m-m-item-right">
+          <image class="m-into-img" src='../../static/images/into.png' mode='aspectFill'/>
+        </view>
+      </navigator>
+
+    </view>
+  </view>
+</view>

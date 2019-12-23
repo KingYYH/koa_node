@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/user/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff", 
+    "navigationBarTitleText": "倾听", 
+    "navigationBarTextStyle": "black" 
+  },
+  "tabBar": {
+    "color": "#e6e6e6",
+    "selectedColor": "#8be6b8",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "圈子",
+        "iconPath": "static/images/ring.png",
+        "selectedIconPath": "static/images/ring_press.png"
+      },
+      {
+        "pagePath": "pages/user/index",
+        "text": "我的",
+        "iconPath": "static/images/user.png",
+        "selectedIconPath": "static/images/user_press.png"
+      }
+    ]
+  },
+  "subpackages": [
+    {
+      "root": "pagesubA",
+      "pages": [
+        "collect/index"
+      ]
+    }, 
+    {
+      "root": "pagesubB",
+      "pages": [
+        "info/index",
+        "man/index",
+        "woman/index"
+      ]
+    }
+  ],
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

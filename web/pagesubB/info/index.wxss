@@ -1,0 +1,75 @@
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.m-cir {
+  margin-bottom: 20px;
+}
+
+.m-cir-item {
+  border-radius: 4px;
+  margin-right: 10px;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 4px;
+  padding: 4px;
+}
+
+.m-cir-g {
+  background-color: #00FF00;
+}
+
+.m-cir-p {
+  background-color: #FF88C2;
+}
+
+
+.m-cir-b {
+  background-color:#9955FF;
+}
+
+
+.m-cir-y {
+  background-color: #BBBB00;
+}
+
+.m-cir-type {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+  box-sizing: border-box;
+}
+
+.active-type {
+  font-size: 18px;
+}
+
+.m-disc {
+  width: 100%;
+  border: 1px solid #ccc;
+}
+
+.m-disc-input {
+  height: 150px;
+  font-size: 14px;
+  color: #333;
+  padding: 10px;
+  line-height: 20px;
+}
+
+.m-send-listen {
+  width: 160px;
+  padding: 10px;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  left: 0;
+  right: 0;
+  color: #fff;
+  background-color: violet;
+}

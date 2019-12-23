@@ -1,0 +1,83 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="m-home-top" >
+    <swiper class='carousel-swiper' indicator-dots="true" indicator-color="#f4f4f4" indicator-active-color="#4eb8b8" autoplay="true" interval='2000' circular='true'>
+      <block wx:for="{{carouselList}}" wx:key="key">
+        <swiper-item bindtap='swiperClick' data-url='{{item.img_url}}'>
+          <image class="carousel-img" src='{{item.img_url}}' mode='aspectFill' ></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="m-author">
+    <view class="m-author-us">
+      <navigator class="m-heart"  url="/pagesubB/woman/index">
+        <image class="m-heart-img" src="../../static/us/women.jpg" mode="widthFix" lazy-load="false"/>
+        <view class="m-heart-text">
+          女主
+        </view>
+      </navigator>
+      <view class="m-heart">
+        <image class="m-vs" src="../../static/us/vs.jpg" mode="widthFix" lazy-load="false"/>
+      </view>
+      <navigator class="m-heart" url="/pagesubB/man/index">
+        <image class="m-heart-img" src="../../static/us/man.jpg" mode="widthFix" lazy-load="false"/>
+        <view class="m-heart-text">
+          男主
+        </view>
+      </navigator>
+    </view>
+  </view>
+  <view class="m-listen" wx:for="{{articleList}}" wx:key="key">
+    <view class="m-listen-top" >
+      <view class="m-listen-top-left" >
+        <image class="m-user-img" src='' mode='aspectFill'/>
+        <view class="m-user-info">
+          <view class="m-user-name">
+            WT
+          </view>
+          <view class="m-user-time">
+            3天前
+          </view>
+        </view>
+      </view>
+      <view class="m-listen-top-right" >
+        <text class="m-circle-g" wx:if="{{item.listentype == 1}}">随笔</text>
+        <text class="m-circle-p" wx:if="{{item.listentype == 2}}">日记</text>
+        <text class="m-circle-b" wx:if="{{item.listentype == 3}}">心情</text>
+        <text class="m-circle-y" wx:if="{{item.listentype == 4}}">杂事</text>
+      </view>
+    </view>
+    <view class="m-listen-center" >
+      <view class="m-listen-center-disc" >
+        {{item.listenval}}
+      </view>
+      <image class="m-comment-img" wx:for="{{[1,2,3]}}" wx:key="{{index}}" src='../../static/test.jpg' mode='aspectFill' />
+    </view>
+    <view class="m-listen-bottom" >
+      <view class="m-operate">
+        <image class="zan-img" src='../../static/us/zan.png' mode='aspectFill' wx:if="{{!item.status}}" data-id="{{item.article_id}}" bindtap="addZan"/>
+        <image class="zan-img" src='../../static/us/zan_ed.png' mode='aspectFill' wx:if="{{item.status}}"  data-id="{{item.article_id}}"  bindtap="cancelZan"/>
+        <view class="m-operate-text">
+          {{item.fav_nums}}
+        </view>
+      </view>
+      <view class="m-operate">
+        <image class="heart-img" src='../../static/us/heart_ed.png' mode='aspectFill' wx:if="{{item.col_nums * 1 > 0}}"/>
+        <image class="heart-img" src='../../static/us/heart.png' mode='aspectFill' wx:else data-id="{{item.article_id}}"  bindtap="collect"/>
+        <view class="m-operate-text">
+          {{item.col_nums}}
+        </view>
+      </view>
+      <view class="m-operate">
+        <image class="comment-img" src='../../static/us/comment.png' mode='aspectFill' />
+        <view class="m-operate-text">
+          1
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="m-add" bindtap="createCircle">
+    <image class="m-add-img" src="../../static/us/add.png" mode="aspectFill" lazy-load="false"/>
+  </view>
+</view>

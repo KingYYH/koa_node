@@ -1,0 +1,175 @@
+/**index.wxss**/
+
+.container {
+  width: 100%;
+  height: 100%;
+  background: rgb(241, 234, 234);
+  position: relative;
+}
+
+.m-home-top {
+  width: 100%;
+}
+
+.carousel-swiper {
+  width: 100%;
+  height: 120px;
+}
+.carousel-img {
+  width: 100%;
+  height: 120px;
+}
+.m-author {
+  padding: 30px;
+  background: #fff;
+  margin-bottom: 10px;
+}
+.m-author-us {
+  display: flex;
+  align-items: center;
+}
+.m-heart {
+  flex: 1;
+  text-align: center;
+  margin: 0 auto;
+}
+.m-vs {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.m-heart-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 8px;
+}
+
+.m-heart-text {
+  width: 50px;
+  color: #ffffff;
+  font-size: 14px;
+  border-radius: 4px;
+  padding: 2px 4px;
+  box-sizing: border-box;
+  background: #8be6b8;
+  /* display: inline-block; */
+  margin: 0 auto;
+}
+
+.m-listen {
+  padding: 20px;
+  background: #fff;
+  margin-bottom: 10px;
+}
+.m-listen-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.m-listen-top-left {
+  display: flex;
+  align-items: center;
+}
+
+.m-user-img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 4px;
+  background-color: #8be6b8;
+}
+
+.m-user-name {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+.m-user-time {
+  font-size: 12px;
+  color: #ccc;
+}
+
+.m-listen-top-right {
+  font-size: 14px;
+  color: #333;
+}
+.m-listen-center {
+  margin-bottom: 20px;
+}
+
+.m-listen-center-disc {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.m-comment-img {
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+}
+
+.m-listen-bottom {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.m-operate {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.zan-img {
+  width: 20px;
+  height: 20px;
+  margin-right: 4px;
+}
+
+.heart-img {
+  width: 20px;
+  height: 20px;
+  margin-right: 4px;
+}
+
+.comment-img {
+  width: 20px;
+  height: 20px;
+  margin-right: 4px;
+}
+
+.m-operate-text {
+  font-size: 12px;
+  color: #ccc;
+}
+
+.m-add-img {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  bottom: 30px;
+  right: 10px;
+  z-index: 999;
+}
+
+.m-circle-g {
+  color: #00FF00;
+}
+
+.m-circle-p {
+  color: #FF88C2;
+}
+
+
+.m-circle-b {
+  color:#9955FF;
+}
+
+
+.m-circle-y {
+  color: #BBBB00;
+}

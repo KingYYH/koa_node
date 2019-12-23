@@ -1,0 +1,50 @@
+<!--index.wxml-->
+<view class="container">
+    <view class="m-listen" wx:for="{{flowList}}" wx:key="key">
+    <view class="m-listen-top" >
+      <view class="m-listen-top-left" >
+        <image class="m-user-img" src='' mode='aspectFill'/>
+        <view class="m-user-info">
+          <view class="m-user-name">
+            WT
+          </view>
+          <view class="m-user-time">
+            3天前
+          </view>
+        </view>
+      </view>
+      <view class="m-listen-top-right" >
+        <text class="m-circle-g" wx:if="{{item.listentype == 1}}">随笔</text>
+        <text class="m-circle-p" wx:if="{{item.listentype == 2}}">日记</text>
+        <text class="m-circle-b" wx:if="{{item.listentype == 3}}">心情</text>
+        <text class="m-circle-y" wx:if="{{item.listentype == 4}}">杂事</text>
+      </view>
+    </view>
+    <view class="m-listen-center" >
+      <view class="m-listen-center-disc" >
+        {{item.listenval}}
+      </view>
+      <image class="m-comment-img" wx:for="{{[1,2,3]}}" wx:key="{{index}}" src='../../static/test.jpg' mode='aspectFill' />
+    </view>
+    <view class="m-listen-bottom" >
+      <view class="m-operate">
+        <image class="zan-img" src='../../static/us/zan.png' mode='aspectFill'/>
+        <view class="m-operate-text">
+          {{item.fav_nums}}
+        </view>
+      </view>
+      <view class="m-operate">
+        <image class="heart-img" src='../../static/us/heart.png' mode='aspectFill'/>
+        <view class="m-operate-text">
+          {{item.col_nums}}
+        </view>
+      </view>
+      <view class="m-operate">
+        <image class="comment-img" src='../../static/us/comment.png' mode='aspectFill' />
+        <view class="m-operate-text">
+          0
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

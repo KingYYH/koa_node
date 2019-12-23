@@ -1,0 +1,62 @@
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+  background-color: beige;
+}
+
+.m-user {
+  padding: 20px 0;
+}
+
+.m-user-img {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.userinfo-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.m-user-sec {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+.sec-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.item-text {
+  font-size: 12px;
+  color: #333;
+}
+
+.item-img {
+  width: 20px;
+  height: 20px;
+  margin-right: 6px;
+}
+
+
+.m-intro {
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.intro-mine {
+  font-size: 18px;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.intro-text {
+  font-size: 16px;
+  color: #333;
+}
